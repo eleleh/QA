@@ -15,12 +15,12 @@ Die getestete Anwendung ist eine responsive Medien-Webseite mit:
 •	Accordion-Darstellung der Geschichte auf kleineren Bildschirmgrößen.
 2. Testziel
 Ziel ist es, zu überprüfen, dass:
-1.	Nutzer zuverlässig durch die Webseite navigieren können.
-2.	Reservierungs- und Kontaktanfragen korrekt validiert und an Formspree übermittelt werden.
-3.	Interaktive Inhalte wie Timeline, Videoskarussell und Audio-Player korrekt reagieren.
-4.	Medieninhalte vollständig geladen und nutzbar sind.
-5.	Die Webseite auf Desktop-, Tablet- und Smartphone-Ansichten funktional bleibt.
-6.	Kritische Nutzerpfade stabil und reproduzierbar funktionieren.
+•	Nutzer zuverlässig durch die Webseite navigieren können.
+•	Reservierungs- und Kontaktanfragen korrekt validiert und an Formspree übermittelt werden.
+•	Interaktive Inhalte wie Timeline, Videoskarussell und Audio-Player korrekt reagieren.
+•	Medieninhalte vollständig geladen und nutzbar sind.
+•	Die Webseite auf Desktop-, Tablet- und Smartphone-Ansichten funktional bleibt.
+•	Kritische Nutzerpfade stabil und reproduzierbar funktionieren.
 3. Scope
 In Scope
 •	Seitenaufruf und grundlegendes Rendering.
@@ -44,34 +44,29 @@ Out of Scope
 •	Vollständige WCAG-Zertifizierung.
 •	Echte Zustellung der E-Mail im automatisierten Test, sofern keine kontrollierte Test-Mailbox vorhanden ist.
 4. Risiken und Priorisierung
-Risiko	Auswirkung	Priorität	Begründung
-Reservierungsanfrage wird nicht übermittelt	Hoch	Hoch	Zentrale Conversion-Funktion
-Ungültige Reservierungsdaten werden akzeptiert	Hoch
-	Hoch
-	Kann zu falschen Buchungen führen
+•	Risiko	•	Auswirkung	•	Priorität	•	Begründung
+•	Reservierungsanfrage wird nicht übermittelt	•	Hoch	•	Hoch	•	Zentrale Conversion-Funktion
+•	Ungültige Reservierungsdaten werden akzeptiert	•	Hoch	•	Hoch	•	Kann zu falschen Buchungen führen
 
-Pflichtfelder werden nicht validiert
-	Hoch
-	Hoch
-	Nutzer erhalten keine verlässliche Eingaberückmeldung
-Kontaktformular wird nicht übermittelt
-	Mittel	Mittel	Wichtiger Kommunikationskanal
+•	Pflichtfelder werden nicht validiert
+	•	Hoch	•	Hoch	•	Nutzer erhalten keine verlässliche Eingaberückmeldung
+•	Kontaktformular wird nicht übermittelt
+	•	Mittel	•	Mittel	•	Wichtiger Kommunikationskanal
 
-Navigation führt zur falschen Section	Mittel	Hoch
-	Beeinträchtigt Orientierung und Nutzung
+•	Navigation führt zur falschen Section	•	Mittel	•	Hoch	•	Beeinträchtigt Orientierung und Nutzung
 
-Responsive Layout bricht auf Smartphone	Hoch	Hoch	Meisten Nutzer verwenden mobile Geräte
-Timeline- oder Carousel-Zustand ist inkorrekt	Mittel	Mittel	Zentrale Interaktion des Projekts
+•	Responsive Layout bricht auf Smartphone	•	Hoch	•	Hoch	•	Meisten Nutzer verwenden mobile Geräte
+•	Timeline- oder Carousel-Zustand ist inkorrekt	•	Mittel	•	Mittel	•	Zentrale Interaktion des Projekts
 
-Audio/Video kann nicht gestartet werden	Mittel	Mittel	Medienangebot ist Hauptzweck der Seite
-Fortschrittsbalken oder Zeit aktualisiert sich nicht	Niedrig	Niedrig	Audio wird abgespielt aber Nutzer erkennt Wiedergabestatus visuell nicht
-Horizontaler Social-Media-Scroll funktioniert nicht	Niedrig	Niedrig	Ist nur für Desktop-Nutzer verfügbar, Funktionalität ist weiter gegegeben
-Externe Social-Links öffnen falsche oder kaputte URL	Mittel	Niedrig	Externe Navigation, aber leicht prüfbar
-Einzelnes Bild lädt nicht
-	Niedrig	Niedrig	Beeinträchtigt einzelne Inhalte
+•	Audio/Video kann nicht gestartet werden	•	Mittel	•	Mittel	•	Medienangebot ist Hauptzweck der Seite
+•	Fortschrittsbalken oder Zeit aktualisiert sich nicht	•	Niedrig	•	Niedrig	•	Audio wird abgespielt aber Nutzer erkennt Wiedergabestatus visuell nicht
+•	Horizontaler Social-Media-Scroll funktioniert nicht	•	Niedrig	•	Niedrig	•	Ist nur für Desktop-Nutzer verfügbar, Funktionalität ist weiter gegegeben
+•	Externe Social-Links öffnen falsche oder kaputte URL	•	Mittel	•	Niedrig	•	Externe Navigation, aber leicht prüfbar
+•	Einzelnes Bild lädt nicht
+	•	Niedrig	•	Niedrig	•	Beeinträchtigt einzelne Inhalte
 
-Animiertes Logo läuft nicht korrekt
-	Niedrig	Niedrig	Dekorativ, nicht geschäftskritisch
+•	Animiertes Logo läuft nicht korrekt
+	•	Niedrig	•	Niedrig	•	Dekorativ, nicht geschäftskritisch
 
 5. Testdesign-Techniken
 •	Equivalence Class Partitioning (ECP): gültige und ungültige Eingabeklassen, z. B. leere Felder oder ungültige E-Mail-Adressen.
@@ -84,13 +79,13 @@ Toolauswahl
 •	Playwright Request API oder ein API-Tool: für kontrollierte HTTP-Prüfungen, falls ein eigener Backend-Endpunkt existiert.
 •	Formspree: im automatisierten Test Request und UI-Reaktion prüfen; die echte E-Mail-Zustellung separat mit einer kontrollierten Mailbox verifizieren.
 Priorität der Automatisierung
-1.	Kernpfad: Reservierungsformular erfolgreich absenden.
-2.	Kernpfad: Reservierungsformular mit ungültigen Eingaben.
-3.	Footer-Kontaktformular erfolgreich und fehlerhaft absenden.
-4.	Header-, Footer- und Hamburger-Navigation.
-5.	Timeline-Punkte und Videoskarussell.
-6.	Responsive Smoke Tests.
-7.	Medien- und Bild-Ladeprüfungen.
+•	Kernpfad: Reservierungsformular erfolgreich absenden.
+•	Kernpfad: Reservierungsformular mit ungültigen Eingaben.
+•	Footer-Kontaktformular erfolgreich und fehlerhaft absenden.
+•	Header-, Footer- und Hamburger-Navigation.
+•	Timeline-Punkte und Videoskarussell.
+•	Responsive Smoke Tests.
+•	Medien- und Bild-Ladeprüfungen.
 7. Testumgebung
 Browser
 •	Chrome: Pflichtabdeckung.
@@ -128,11 +123,11 @@ Empfohlene Reports:
 •	Trace bei wiederholbaren oder instabilen Fehlern.
 •	Video nur bei Bedarf, um Artefaktgröße zu begrenzen.
 Beispielhafte Pipeline-Stufen:
-1.	Installieren und bauen.
-2.	Chromium-Smoke-Tests ausführen.
-3.	Vollständige Web-Test-Suite ausführen.
-4.	Reports als CI-Artefakte speichern.
-5.	Optional Firefox/WebKit und responsive Tests nightly ausführen.
+•	Installieren und bauen.
+•	Chromium-Smoke-Tests ausführen.
+•	Vollständige Web-Test-Suite ausführen.
+•	Reports als CI-Artefakte speichern.
+•	Optional Firefox/WebKit und responsive Tests nightly ausführen.
 10. Qualitätsmetriken
 •	Erfolgsquote der High-Priority-Tests: 100 % vor Release.
 •	Kernpfade automatisiert: mindestens 90 %.
