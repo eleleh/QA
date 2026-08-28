@@ -6,13 +6,12 @@
 **Status:** `Offen` / `In Arbeit` / `In Review` / `Behoben` / `Won't Fix` / `Duplicate`  
 **Projekt:** [Web / Android / API]  
 **Komponente:** [z. B. `ReservationModal`, `Formspree-Integration`, `Timeline-Component`]
+**Typ:** [`Bug` / `Task` / `Story` / `Improvement` ]
+**Severity:** [`Kritisch` / `Hoch` / `Mittel` / `Niedrig`]
+**Priority:** [`Sofort` / `Hoch` / `Mittel` / `Niedrig` ]
+**Labels:** optional | [z. B. `form`, `validation`, `mobile`, `accessibility`] |
 
-| **Typ** | `Bug` / `Task` / `Story` / `Improvement` |
-| **Severity** | `Kritisch` / `Hoch` / `Mittel` / `Niedrig` |
-| **Priority** | `Sofort` / `Hoch` / `Mittel` / `Niedrig` |
-| **Labels** optional | [z. B. `form`, `validation`, `mobile`, `accessibility`] |
-
----
+-----
 
 ## 1. Zusammenfassung
 
@@ -48,8 +47,8 @@
 | Schritt | Aktion | Erwartetes Ergebnis | Tatsächliches Ergebnis |
 |---:|---|---|---|
 | 1 | [Aktion 1] | [Was sollte passieren?] | [Was passiert stattdessen?] |
-| 2 | [Aktion 2] | [â¦¶] | [â¦¶] |
-| 3 | [Aktion 3] | [â¦¶] | [â¦¶] |
+| 2 | [Aktion 2] | | |
+| 3 | [Aktion 3] | | |
 
 ---
 
@@ -58,6 +57,7 @@
 [Detaillierte Beschreibung, was bei korrekter Implementierung passieren sollte.]
 
 Screenshot (optional)
+
 ---
 
 ## 6. Tatsächliches Verhalten
@@ -66,7 +66,7 @@ Screenshot (optional)
 
 Screenshot
 
----
+-----
 ## 7. Häufigkeit
 
 | Feld | Wert |
@@ -100,7 +100,7 @@ optional
 | Datum | Autor | Änderung |
 |---|---|---|
 | [Datum] | [Name] | [Bug erstellt] |
-| [Datum] | [Name] | [Status geÃ¤ndert: Offen → In Arbeit] |
+| [Datum] | [Name] | [Status geändert: Offen → In Arbeit] |
 | [Datum] | [Name] | [Kommentar: Ursache identifiziert, Fix in PR #123] |
 | [Datum] | [Name] | [Status geÃ¤ndert: In Arbeit → Behoben] |
 
