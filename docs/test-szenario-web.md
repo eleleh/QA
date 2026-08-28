@@ -18,14 +18,14 @@
 
 | TC-ID | Titel | Typ | Prio | Kern-TC |
 |-------|-------|-----|------|---------|
-| TC-W01 | Startseite lä­­dt vollständig ohne Fehler | automated | Hoch | Ja |
+| TC-W01 | Startseite lädt vollständig ohne Fehler | automated | Hoch | Ja |
 | TC-W02 | Navbar-Link „Timeline" scrollt zur Historiesektion | automated | Hoch | Ja | 
 | TC-W03 | Navbar-Link „Podcast" scrollt zur Podcast-Sektion | automated | Mittel | Ja | 
-| TC-W04 | Navbar-Link „Social Kanä¬¬le" scrollt zur Sektion | automated | Niedrig | --- | 
+| TC-W04 | Navbar-Link „Social Kanäle" scrollt zur Sektion | automated | Niedrig | --- | 
 | TC-W05 | Navbar-Link „Angebote" scrollt zur Angebotesektion | automated | Niedrig | --- | 
-| TC-W06 | Navbar-CTA „Reservieren" ö­­ffnet Modal | automated | Hoch | Ja |
+| TC-W06 | Navbar-CTA „Reservieren" öffnet Modal | automated | Hoch | Ja |
 | TC-W07 | Button „Die Geschichte erkunden" scrollt zur Historiesektion | automated | Hoch | Ja | 
-| TC-W08 | Logo-Link fü­­hrt zur Startseite zuru­­ck | automated | Niedrig | --- |
+| TC-W08 | Logo-Link führt zur Startseite zurück | automated | Niedrig | --- |
 
 ---
 
@@ -38,31 +38,31 @@
 | TC-W11 | Datumvalidierung: Reservierungsdatum in Vergangenheit nicht zulässig | automated | Hoch | Ja |
 | TC-W12 | BVA Personen: Wert 1 (unter Minimum) wird abgelehnt | automated | Hoch | Ja |
 | TC-W13 | BVA Personen: Wert 2 (Minimum-Grenzwert) wird akzeptiert | automated | Hoch | --- |
-| TC-W14 | BVA Personen: Wert 21 (u­­ber Maximum) wird abgelehnt | automated | Hoch | Ja |
+| TC-W14 | BVA Personen: Wert 21 (über Maximum) wird abgelehnt | automated | Hoch | Ja |
 | TC-W15 | BVA Personen: Wert 20 (Maximum-Grenzwert) wird akzeptiert | automated | Hoch | --- |
 | TC-W16 | Zeitvalidierung: Von-Zeit nach Bis-Zeit wird abgelehnt | automated | Hoch | Ja |
 | TC-W17 | Zeitvalidierung: Buchungsdauer unter 30 Min wird abgelehnt | automated | Hoch | Ja |
-| TC-W18 | E-Mail-Format ungu­­ltig | automated | Mittel | Ja |
-| TC-W19 | Erfolgreiche Reservierung: alle Felder gu­­ltig | automated | Hoch | Ja |
+| TC-W18 | E-Mail-Format ungültig | automated | Mittel | Ja |
+| TC-W19 | Erfolgreiche Reservierung: alle Felder gültig | automated | Hoch | Ja |
 
 ---
 
-## Zustandsu­­bergänge – Modal, Hamburger, Timeline, Carousel (TC-W20–W31)
+## Zustandsübergänge – Modal, Hamburger, Timeline, Carousel (TC-W20–W31)
 
 | TC-ID | Titel | Typ | Prio | Kern-TC |
 |-------|-------|-----|------|---------|
-| TC-W20 | Modal schlie­­ßt per X-Button | automated | Hoch | Ja |
-| TC-W21 | Modal schlie­­ßt per Klick au­­erhalb | automated | Mittel | --- |
-| TC-W22 | Hamburger-Menu­­ ö­­ffnet und schlie­­ßt (375 px, 768 px) | manual | Mittel | --- |
-| TC-W23 | Hamburger-Menu­­: Link "Timeline" navigiert und schließ­­t Menu­­ | manual | Mittel | --- |
+| TC-W20 | Modal schließt per X-Button | automated | Hoch | Ja |
+| TC-W21 | Modal schließt per Klick außerhalb | automated | Mittel | --- |
+| TC-W22 | Hamburger-Menü öffnet und schließt (375 px, 768 px) | manual | Mittel | --- |
+| TC-W23 | Hamburger-Menü: Link "Timeline" navigiert und schließt Menü | manual | Mittel | --- |
 | TC-W24 | Timeline: Erster Punkt aktiv bei Seitenaufruf (BVA) | automated | Mittel | Ja |
-| TC-W25 | Timeline: Hover u­­ber inaktiven Punkt zeigt Jahr | manual | Niedrig | --- |
+| TC-W25 | Timeline: Hover über inaktiven Punkt zeigt Jahr | manual | Niedrig | --- |
 | TC-W26 | Timeline: Klick auf inaktiven Punkt aktiviert Epoche | automated | Mittel | --- |
 | TC-W27 | Timeline: Letzter Punkt klickbar und korrekt aktiviert (BVA) | automated | Mittel | --- |
-| TC-W28 | Timeline-Carousel: Rechts-Pfeil lä­­dt nä­­chstes Video | automated | Mittel | Ja |
-| TC-W29 | Timeline-Carousel: Links-Pfeil kehrt zum vorherigen Video zuru­­ck (BVA) | automated | Mittel | --- |
-| TC-W30 | Timeline-Accordion ö­­ffnet Timeline (375 px, 768 px) | manual | Niedrig | --- |
-| TC-W31 | Timeline-Accordion schließ­­t Timeline | manual | Niedrig | --- |
+| TC-W28 | Timeline-Carousel: Rechts-Pfeil lädt nächstes Video | automated | Mittel | Ja |
+| TC-W29 | Timeline-Carousel: Links-Pfeil kehrt zum vorherigen Video zurück (BVA) | automated | Mittel | --- |
+| TC-W30 | Timeline-Accordion öffnet Timeline (375 px, 768 px) | manual | Niedrig | --- |
+| TC-W31 | Timeline-Accordion schließt Timeline | manual | Niedrig | --- |
 
 ---
 
@@ -83,13 +83,13 @@
 | TC-ID | Titel | Typ | Prio | Kern-TC |
 |-------|-------|-----|------|---------|
 | TC-W37 | Social-Kanäle: Icons  vollständig sichtbar | automated | Niedrig | --- |
-| TC-W38 | Social-Media-Icons fü­­hren zu korrekten externen Links | automated | Niedrig | --- |
+| TC-W38 | Social-Media-Icons führen zu korrekten externen Links | automated | Niedrig | --- |
 | TC-W39 | Horizontaler Social-Media-Scroll: Maus, Touch und Tastatur funktionieren | manual | Hoch | --- |
 | TC-W40 | Horizontaler Social-Media-Scroll: Touch (Wischgeste) auf Smartphone | manual | Mittel | --- |
 | TC-W41 | Horizontaler Social-Media-Scroll: Tastatur (Tab, Pfeiltasten) | manual | Mittel | --- |
 | TC-W42 | Horizontaler Scroll: Erster und letzter Eintrag erreichbar, kein Layoutbruch | manual | Mittel | --- |
-| TC-W43 | Externer Social-Media-Link ö­­ffnet korrekte URL (neuer Tab, noopener) | automated | Niedrig | --- |
-| TC-W44 | Eingebettetes Bild/Video lä­­dt vollständig | automated | Niedrig | --- |
+| TC-W43 | Externer Social-Media-Link öffnet korrekte URL (neuer Tab, noopener) | automated | Niedrig | --- |
+| TC-W44 | Eingebettetes Bild/Video lädt vollständig | automated | Niedrig | --- |
 | TC-W45 | Fehlendes externes Medium zeigt kontrollierten Fehlerzustand | manual | Niedrig | --- |
 
 
@@ -111,9 +111,9 @@
 | TC-W47 | Footer Quick Links navigieren zur korrekten Sektion | automated | Mittel | --- |
 | TC-W48 | Kontaktformular: alle Felder leer | automated | Mittel | Ja |
 | TC-W49 | Kontaktformular: Name unter 2 Zeichen wird abgelehnt | automated | Mittel | Ja |
-| TC-W50 | Kontaktformular: E-Mail-Format ungu­­ltig wird abgelehnt | automated | Mittel | Ja |
+| TC-W50 | Kontaktformular: E-Mail-Format ungültig wird abgelehnt | automated | Mittel | Ja |
 | TC-W51 | Kontaktformular: Nachricht unter 10 Zeichen wird abgelehnt | automated | Mittel | Ja |
-| TC-W52 | Kontaktformular: gu­­ltige Eingabe → Bestätigungsmodal | automated | Mittel | Ja |
+| TC-W52 | Kontaktformular: gültige Eingabe → Bestätigungsmodal | automated | Mittel | Ja |
 | TC-W53 | Footer Social-Media-Icons verlinkt und sichtbar | automated | Niedrig | --- |
 
 ---
@@ -135,7 +135,7 @@
 |-------|-------|-----|------|---------|
 | TC-W59 | Direkter Aufruf der Startseite | automated | Mittel | --- |
 | TC-W60 | Direkter Aufruf mit Section-Hash (z. B. `/#timeline`) | automated | Mittel | --- |
-| TC-W61 | Ungu­­ltiger Hash bzw. nicht vorhandene Ziel-Section | automated | Niedrig | --- |
+| TC-W61 | Ungültiger Hash bzw. nicht vorhandene Ziel-Section | automated | Niedrig | --- |
 | TC-W62 | Refresh nach Navigation zu einer Section | automated | Mittel | --- |
 
 ---
@@ -143,11 +143,11 @@
 
 | TC-ID | Titel | Typ | Prio | Kern-TC |
 |-------|-------|-----|------|---------|
-| TC-W63 | Desktop-Layout (1920×¬1080): kein horizontaler Overflow | automated | Mittel | --- |
-| TC-W64 | Tablet (768×¬1024): keine abgeschnittenen Inhalte | manual | Mittel | --- |
-| TC-W65 | Smartphone (375×¬667): Modal vollstä¬¬ndig bedienbar | manual | Hoch | --- |
+| TC-W63 | Desktop-Layout (1920×1080): kein horizontaler Overflow | automated | Mittel | --- |
+| TC-W64 | Tablet (768×1024): keine abgeschnittenen Inhalte | manual | Mittel | --- |
+| TC-W65 | Smartphone (375×667): Modal vollständig bedienbar | manual | Hoch | --- |
 | TC-W66 | Smartphone im Querformat: kein Layoutbruch | manual | Mittel | --- |
-| TC-W67 | Timeline-Accordion: ö­­ffnet und schlie­­t korrekt (375 px, 768 px) | manual | Mittel | --- |
+| TC-W67 | Timeline-Accordion: öffnet und schließt korrekt (375 px, 768 px) | manual | Mittel | --- |
 
 ---
 
@@ -156,8 +156,8 @@
 | TC-ID | Titel | Typ | Prio | Kern-TC |
 |-------|-------|-----|------|---------|
 | TC-W68 | Navigation mit Tastatur (Tab, Enter, Escape) | manual | Mittel | --- |
-| TC-W69 | Modal-Fokus: Fokus bleibt im Modal, Escape schlie­­t | manual | Mittel | --- |
-| TC-W70 | Verstä¬¬ndliche Button-/Link-Namen (accessible name) | manual | Niedrig | --- |
+| TC-W69 | Modal-Fokus: Fokus bleibt im Modal, Escape schließt | manual | Mittel | --- |
+| TC-W70 | Verständliche Button-/Link-Namen (accessible name) | manual | Niedrig | --- |
 | TC-W71 | Bilder besitzen Alt-Texte | manual | Niedrig | --- |
 | TC-W72 | Accordion verwendet korrekten off/zu-Zustand (aria-expanded) | manual | Niedrig | --- |
 
@@ -169,9 +169,9 @@
 |-----------|------------|----------|-----------|--------|
 | Navigation | 8 | 5 | 8 | 0 |
 | Reservierungsformular | 11 | 9 | 11 | 0 |
-| Zustandsu­­bergä¬¬nge | 12 | 3 | 7 | 5 |
+| Zustandsübergänge | 12 | 3 | 7 | 5 |
 | Podcast | 5 | 0 | 2 | 3 |
-| Social Kanä¬¬le | 9 | 0 | 4 | 5 |
+| Social Kanäle | 9 | 0 | 4 | 5 |
 | Bilder | 1 | 0 | 1 | 0 |
 | Footer | 7 | 5 | 7 | 0 |
 | Formspree-Integration | 5 | 3 | 4 | 1 |

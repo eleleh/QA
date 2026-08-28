@@ -11,7 +11,7 @@
 **Priority:** [`Sofort` / `Hoch` / `Mittel` / `Niedrig` ]
 **Labels:** optional | [z. B. `form`, `validation`, `mobile`, `accessibility`] |
 
------
+---
 
 ## 1. Zusammenfassung
 
@@ -64,15 +64,16 @@ Screenshot (optional)
 
 [Detaillierte Beschreibung, was tatsächlich passiert.]
 
-Screenshot
+Screenshot 
 
------
+---
+
 ## 7. Häufigkeit
 
 | Feld | Wert |
 |---|---|
 | **Reproduzierbarkeit** | `Immer` / `Häufig` / `Gelegentlich` / `Selten` |
-| **Getestete DurchlÃ¤ufe** | [z. B. 5 von 5 Versuchen reproduzierbar] |
+| **Getestete Durchläufe** | [z. B. 5 von 5 Versuchen reproduzierbar] |
 | **Besondere Bedingungen** | [z. B. „Nur bei langsamer Netzwerkverbindung", „Nur im Smartphone-Viewport"] |
 
 ---
@@ -89,7 +90,7 @@ optional
 | **Verwandte Testfälle** | [z. B. TC-W18, TC-W54] | [Welche Tests sind betroffen?] |
 | **Blockiert** | [z. B. BUG-005, TASK-123] | [Welche anderen Bugs/Tasks werden blockiert?] |
 | **Wird blockiert von** | [z. B. BUG-003] | [Welcher andere Bug blockiert diesen hier?] |
-| **Verwandte Bugs** | [z. B. BUG-002] | [Ã¤hnliche Fehler oder gleiche Ursache] |
+| **Verwandte Bugs** | [z. B. BUG-002] | [ähnliche Fehler oder gleiche Ursache] |
 | **Anforderung / Ticket** | [z. B. Jira TASK-123, GitHub Issue #45] | [Welche User Story / Anforderung ist betroffen?] |
 
 
@@ -102,7 +103,7 @@ optional
 | [Datum] | [Name] | [Bug erstellt] |
 | [Datum] | [Name] | [Status geändert: Offen → In Arbeit] |
 | [Datum] | [Name] | [Kommentar: Ursache identifiziert, Fix in PR #123] |
-| [Datum] | [Name] | [Status geÃ¤ndert: In Arbeit → Behoben] |
+| [Datum] | [Name] | [Status geändert: In Arbeit → Behoben] |
 
 ---
 
