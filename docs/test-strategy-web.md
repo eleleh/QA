@@ -108,7 +108,7 @@ Ziel ist es, zu überprüfen, dass:
 
 ### Viewports
 
-- Desktop: 1280 × 800
+- Desktop: 1024 × 800
 - Tablet: 768 × 800
 - Smartphone: 375 × 667
 - Zusätzlich mindestens ein Test im Smartphone‑Querformat
