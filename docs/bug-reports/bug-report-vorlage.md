@@ -5,11 +5,11 @@
 **Autor:** [Dein Name]  
 **Status:** `Offen` / `In Arbeit` / `In Review` / `Behoben` / `Won't Fix` / `Duplicate`  
 **Projekt:** [Web / Android / API]  
-**Komponente:** [z. B. `ReservationModal`, `Formspree-Integration`, `Timeline-Component`]
-**Typ:** [`Bug` / `Task` / `Story` / `Improvement` ]
-**Severity:** [`Kritisch` / `Hoch` / `Mittel` / `Niedrig`]
-**Priority:** [`Sofort` / `Hoch` / `Mittel` / `Niedrig` ]
-**Labels:** optional | [z. B. `form`, `validation`, `mobile`, `accessibility`] |
+**Komponente:** [z. B. `ReservationModal`, `Formspree-Integration`, `Timeline-Component`]  
+**Typ:** [`Bug` / `Task` / `Story` / `Improvement` ]  
+**Severity:** [`Kritisch` / `Hoch` / `Mittel` / `Niedrig`]  
+**Priority:** [`Sofort` / `Hoch` / `Mittel` / `Niedrig` ]  
+**Labels:** optional [z. B. `form`, `validation`, `mobile`, `accessibility`]  
 
 ---
 
