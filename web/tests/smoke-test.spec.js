@@ -61,6 +61,15 @@ test.describe('Smoke Suite – Web Medienprojekt', () => {
 
   //--- FORM TESTS ---
 
+  test('TC-W20: Modal schließt per X-Button ', async ({ page }) => {
+    await homePage.clickReserve();
+
+    await reservationModal.waitForOpen();
+    await reservationModal.close();
+
+    await expect(reservationModal.modal).toBeHidden();
+  });
+
   test('TC-W09: Leeres Reservierungsformular wird nicht abgesendet', async ({ page }) => {
     await homePage.clickReserve();
     await reservationModal.waitForOpen();
@@ -95,7 +104,7 @@ test.describe('Smoke Suite – Web Medienprojekt', () => {
     ).toBeHidden();
   });
 
-  test('TC-W20: Erfolgreiche Kontaktanfrage mit gültigen Daten', async ({ page }) => {
+  test('TC-W53: Erfolgreiche Kontaktanfrage mit gültigen Daten', async ({ page }) => {
     await contactForm.fillAndSubmitValid();
 
     // Warten auf das Success-Modal und schließen

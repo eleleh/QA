@@ -36,13 +36,22 @@ class ReservationModal {
     timeTo = '21:00',
     guests = '2'
   } = {}) {
-    await this.surnameInput.fill(surname);
-    await this.dateInput.fill(date || this.getTomorrowDate());
-    await this.guestsInput.fill(guests);
-    await this.timeFromInput.fill(timeFrom);
-    await this.timeToInput.fill(timeTo);
-    await this.emailInput.fill(email);
+    const merged = { surname, email, date, timeFrom, timeTo, guests };
+    await this.surnameInput.fill(merged.surname);
+    await this.emailInput.fill(merged.email);
+    if (merged.date != null) {
+      await this.dateInput.fill(merged.date);
+    }
+    else {
+      await this.dateInput.fill(this.getTomorrowDate());
+    }
+
+    await this.guestsInput.fill(merged.guests);
+    await this.timeFromInput.fill(merged.timeFrom);
+    await this.timeToInput.fill(merged.timeTo);
   }
+
+
 
   getTomorrowDate() {
     const date = new Date();
@@ -51,9 +60,9 @@ class ReservationModal {
   }
 
   async submit() {
-
-    await this.submitButton.scrollIntoViewIfNeeded();
-    await this.submitButton.click();
+    await this.submitButton.evaluate(button => {
+      button.click();
+    });
   }
 
   async submitWithWorkaround() {

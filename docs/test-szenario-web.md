@@ -52,15 +52,15 @@
 | TC-ID | Titel | Typ | Prio | Kern-TC |
 |-------|-------|-----|------|---------|
 | TC-W20 | Modal schließt per X-Button | automated | Hoch | Ja |
-| TC-W21 | Modal schließt per Klick außerhalb | automated | Mittel | --- |
-| TC-W22 | Hamburger-Menü öffnet und schließt (375 px, 768 px) | manual | Mittel | --- |
-| TC-W23 | Hamburger-Menü: Link "Timeline" navigiert und schließt Menü | manual | Mittel | --- |
+| TC-W21 | Modal schließt per Klick außerhalb | manual| Mittel | --- |
+| TC-W22 | Hamburger-Menü öffnet und schließt (375 px) | automated | Mittel | --- |
+| TC-W23 | Hamburger-Menü: Link "Timeline" navigiert und schließt Menü | automated| Mittel | --- |
 | TC-W24 | Timeline: Erster Punkt aktiv bei Seitenaufruf (BVA) | automated | Mittel | Ja |
 | TC-W25 | Timeline: Hover über inaktiven Punkt zeigt Jahr | manual | Niedrig | --- |
 | TC-W26 | Timeline: Klick auf inaktiven Punkt aktiviert Epoche | automated | Mittel | --- |
 | TC-W27 | Timeline: Letzter Punkt klickbar und korrekt aktiviert (BVA) | automated | Mittel | --- |
-| TC-W28 | Timeline-Carousel: Rechts-Pfeil lädt nächstes Video | automated | Mittel | Ja |
-| TC-W29 | Timeline-Carousel: Links-Pfeil kehrt zum vorherigen Video zurück (BVA) | automated | Mittel | --- |
+| TC-W28 | TC-W28: Carousel-Pfeile navigieren durch die Videos | automated | Mittel | Ja |
+| TC-W29 | Timeline-Carousel: Videos sind geladen und werden abgespiet | automated | Mittel | --- |
 | TC-W30 | Timeline-Accordion öffnet Timeline (375 px, 768 px) | manual | Niedrig | --- |
 | TC-W31 | Timeline-Accordion schließt Timeline | manual | Niedrig | --- |
 
@@ -96,70 +96,71 @@
 ---
 
 
-## Bilder (TC-W46)
+## Medien (TC-W46)
 
 | TC-ID | Titel | Typ | Prio | Kern-TC |
 |-------|-------|-----|------|---------|
-| TC-W46 | Alle Seitenbilder laden vollständig (kein Broken-Image-Symbol) | automated | Niedrig | --- |
+| TC-W46 | Alle Mdien laden vollständig (kein Broken-Image-Symbol) | automated | Niedrig | --- |
 
 ---
 
-## Footer (TC-W47–W53)
+## Footer (TC-W47–W54)
 
 | TC-ID | Titel | Typ | Prio | Kern-TC |
 |-------|-------|-----|------|---------|
-| TC-W47 | Footer Quick Links navigieren zur korrekten Sektion | automated | Mittel | --- |
-| TC-W48 | Kontaktformular: alle Felder leer | automated | Mittel | Ja |
-| TC-W49 | Kontaktformular: Name unter 2 Zeichen wird abgelehnt | automated | Mittel | Ja |
-| TC-W50 | Kontaktformular: E-Mail-Format ungültig wird abgelehnt | automated | Mittel | Ja |
-| TC-W51 | Kontaktformular: Nachricht unter 10 Zeichen wird abgelehnt | automated | Mittel | Ja |
-| TC-W52 | Kontaktformular: gültige Eingabe → Bestätigungsmodal | automated | Mittel | Ja |
-| TC-W53 | Footer Social-Media-Icons verlinkt und sichtbar | automated | Niedrig | --- |
+| TC-W47 | Footer-Button „Tisch Reservieren“ öffnet das Reservierungsmodal | automated | Mittel | ja |
+| TC-W48 | Footer Quick Links navigieren zur korrekten Sektion | automated | Mittel | --- |
+| TC-W49 | Kontaktformular: alle Felder leer | automated | Mittel | Ja |
+| TC-W50 | Kontaktformular: Name unter 2 Zeichen wird abgelehnt | automated | Mittel | Ja |
+| TC-W51 | Kontaktformular: E-Mail-Format ungültig wird abgelehnt | automated | Mittel | Ja |
+| TC-W52 | Kontaktformular: Nachricht unter 10 Zeichen wird abgelehnt | automated | Mittel | Ja |
+| TC-W53 | Kontaktformular: gültige Eingabe → Bestätigungsmodal | automated | Mittel | Ja |
+| TC-W54 | Footer Social-Media-Icons sichtbar und landen auf social-media plattformen | automated | Niedrig | --- |
 
 ---
 
-## Formspree-Integration (TC-W54–W58) 
+## Formspree-Integration (TC-W55–W59) 
 
 | TC-ID | Titel | Typ | Prio | Kern-TC |
 |-------|-------|-----|------|---------|
-| TC-W54 | Reservierungsformular: Erfolgreicher Formspree-Request → Bestätigung wird angezeigt | automated | Hoch | Ja |
-| TC-W55 | Reservierungsformular: Formspree antwortet mit 400/422 → Fehlermeldung, Eingaben bleiben erhalten | automated | Hoch | Ja |
-| TC-W56 | Reservierungsformular: Formspree antwortet mit 500 → verständliche Fehlermeldung, kein Absturz | automated | Mittel | --- |
-| TC-W57 | Kontaktformular: Formspree-Timeout/offline → Fehlerhinweis oder Retry-Option | manual | Mittel | --- |
-| TC-W58 | Doppelklick auf Submit-Button → nur eine Anfrage wird gesendet | automated | Hoch | Ja |
+| TC-W55 | Reservierungsformular: Erfolgreicher Formspree-Request → Bestätigung wird angezeigt | automated | Hoch | Ja |
+| TC-W56 | Reservierungsformular: Formspree antwortet mit 400/422 → Fehlermeldung, Eingaben bleiben erhalten | automated | Hoch | Ja |
+| TC-W57 | Reservierungsformular: Formspree antwortet mit 500 → verständliche Fehlermeldung, kein Absturz | automated | Mittel | --- |
+| TC-W58 | Kontaktformular: Formspree-Timeout/offline → Fehlerhinweis oder Retry-Option | manual | Mittel | --- |
+| TC-W59 | Doppelklick auf Submit-Button → nur eine Anfrage wird gesendet | automated | Hoch | Ja |
 
 ---
-## Deep Links  (TC-W59–W62)
+## Deep Links  (TC-W60–W63)
 
 | TC-ID | Titel | Typ | Prio | Kern-TC |
 |-------|-------|-----|------|---------|
-| TC-W59 | Direkter Aufruf der Startseite | automated | Mittel | --- |
-| TC-W60 | Direkter Aufruf mit Section-Hash (z. B. `/#timeline`) | automated | Mittel | --- |
-| TC-W61 | Ungültiger Hash bzw. nicht vorhandene Ziel-Section | automated | Niedrig | --- |
-| TC-W62 | Refresh nach Navigation zu einer Section | automated | Mittel | --- |
+| TC-W60 | Direkter Aufruf der Startseite | automated | Mittel | --- |
+| TC-W61 | Direkter Aufruf mit Section-Hash (z. B. `/#timeline`) | automated | Mittel | --- |
+| TC-W62 | Ungültiger Hash bzw. nicht vorhandene Ziel-Section | automated | Niedrig | --- |
+| TC-W63 | Refresh nach Navigation zu einer Section | automated | Mittel | --- |
 
 ---
-## Responsive Verhalten (TC-W63–W67) – Neu
+## Responsive Verhalten (TC-W64–W68)
 
 | TC-ID | Titel | Typ | Prio | Kern-TC |
 |-------|-------|-----|------|---------|
-| TC-W63 | Desktop-Layout (1920×1080): kein horizontaler Overflow | automated | Mittel | --- |
-| TC-W64 | Tablet (768×1024): keine abgeschnittenen Inhalte | manual | Mittel | --- |
-| TC-W65 | Smartphone (375×667): Modal vollständig bedienbar | manual | Hoch | --- |
-| TC-W66 | Smartphone im Querformat: kein Layoutbruch | manual | Mittel | --- |
-| TC-W67 | Timeline-Accordion: öffnet und schließt korrekt (375 px, 768 px) | manual | Mittel | --- |
+| TC-W64 | Desktop-Layout (1920×1080): kein horizontaler Overflow | automated | Mittel | --- |
+| TC-W65 | Tablet (768×1024): keine abgeschnittenen Inhalte | manual | Mittel | --- |
+| TC-W66 | Smartphone (375×667): Modal vollständig bedienbar | manual | Hoch | --- |
+| TC-W67 | Smartphone im Querformat: kein Layoutbruch | manual | Mittel | --- |
+| TC-W68 | Timeline-Accordion: öffnet und schließt korrekt (375 px, 768 px) | manual | Mittel | --- |
 
 ---
 
-## Accessibility-Basis (TC-W68–W72) – Neu
+## Accessibility-Basis (TC-W69–W73)
 
 | TC-ID | Titel | Typ | Prio | Kern-TC |
 |-------|-------|-----|------|---------|
-| TC-W68 | Navigation mit Tastatur (Tab, Enter, Escape) | manual | Mittel | --- |
-| TC-W69 | Modal-Fokus: Fokus bleibt im Modal, Escape schließt | manual | Mittel | --- |
-| TC-W70 | Verständliche Button-/Link-Namen (accessible name) | manual | Niedrig | --- |
-| TC-W71 | Bilder besitzen Alt-Texte | manual | Niedrig | --- |
-| TC-W72 | Accordion verwendet korrekten off/zu-Zustand (aria-expanded) | manual | Niedrig | --- |
+| TC-W69 | Navigation mit Tastatur (Tab, Enter, Escape) | manual | Mittel | --- |
+| TC-W70 | Modal-Fokus: Fokus bleibt im Modal, Escape schließt | manual | Mittel | --- |
+| TC-W71 | Verständliche Button-/Link-Namen (accessible name) | manual | Niedrig | --- |
+| TC-W72 | Bilder besitzen Alt-Texte | manual | Niedrig | --- |
+| TC-W73 | Accordion verwendet korrekten off/zu-Zustand (aria-expanded) | manual | Niedrig | --- |
 
 ---
 
@@ -173,11 +174,11 @@
 | Podcast | 5 | 0 | 2 | 3 |
 | Social Kanäle | 9 | 0 | 4 | 5 |
 | Bilder | 1 | 0 | 1 | 0 |
-| Footer | 7 | 5 | 7 | 0 |
+| Footer | 8 | 6 | 8 | 0 |
 | Formspree-Integration | 5 | 3 | 4 | 1 |
 | Deep Links / Direktaufruf | 4 | 0 | 4 | 0 |
 | Responsive Verhalten | 5 | 0 | 1 | 4 |
 | Accessibility-Basis | 5 | 0 | 0 | 5 |
-| **Gesamt** | **72** | **25** | **49** | **23** |
+| **Gesamt** | **73** | **26** | **50** | **23** |
 
 ---
