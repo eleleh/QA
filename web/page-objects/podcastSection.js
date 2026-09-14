@@ -1,51 +1,72 @@
 class PodcastSection {
-    constructor(page) {
+  constructor(page) {
     this.page = page;
+
     this.section = page.locator('#podcast');
-    this.episodes = page.locator('.podcast-episode');
+    this.title = this.section.locator('.media-header h2');
+    this.episodes = this.section.locator('.podcast-episode');
+  }
+
+  episode(episodeNumber) {
+    return this.episodes.nth(episodeNumber - 1);
+  }
+
+  episodeTitle(episodeNumber) {
+    return this.episode(episodeNumber).locator('h4');
+  }
+
+  episodeDescription(episodeNumber) {
+    return this.episode(episodeNumber).locator('.episode-description');
+  }
+
+  playButton(episodeNumber) {
+    return this.episode(episodeNumber).locator('.play-button');
+  }
+
+  progressBar(episodeNumber) {
+    return this.episode(episodeNumber).locator('.progress-bar');
+  }
+
+  timeDisplay(episodeNumber) {
+    return this.episode(episodeNumber).locator('.player-time');
+  }
+
+  async scrollToSection() {
+    await this.section.scrollIntoViewIfNeeded();
   }
 
   async playEpisode(episodeNumber) {
-    const episode = this.episodes.nth(episodeNumber - 1);
-    const playButton = episode.locator('.play-button');
-    await playButton.click();
+    await this.playButton(episodeNumber).click();
   }
 
-    async pauseEpisode(episodeNumber) {
-    const episode = this.episodes.nth(episodeNumber - 1);
-    const playButton = episode.locator('.play-button');
-    await playButton.click();
+  async pauseEpisode(episodeNumber) {
+    await this.playButton(episodeNumber).click();
   }
 
-   async isPlaying(episodeNumber) {
-    const episode = this.episodes.nth(episodeNumber - 1);
-    const playButton = episode.locator('.play-button');
-    const className = await playButton.getAttribute('class');
-    return className.includes('playing');
+  async isPlaying(episodeNumber) {
+    const className = await this.playButton(episodeNumber).getAttribute('class');
+
+    return className?.includes('playing') ?? false;
+  }
+  
+  audio(episodeNumber) {
+    return this.episode(episodeNumber).locator('audio');
   }
 
-    async getProgressBar(episodeNumber) {
-    const episode = this.episodes.nth(episodeNumber - 1);
-    return episode.locator('.progress-bar');
+  async isAudioPlaying(episodeNumber) {
+    return await this.audio(episodeNumber).evaluate(
+      audio => !audio.paused
+    );
   }
 
-   async getTimeDisplay(episodeNumber) {
-    const episode = this.episodes.nth(episodeNumber - 1);
-    const timeDisplay = episode.locator('.player-time');
-    return await timeDisplay.textContent();
+  async getProgressPercent(progressBar) {
+    const style = await progressBar.getAttribute('style');
+
+    const match = style?.match(/width:\s*([\d.]+)%/);
+
+    return match ? Number(match[1]) : 0;
   }
 
-  async getEpisodeTitle(episodeNumber) {
-    const episode = this.episodes.nth(episodeNumber - 1);
-    const title = episode.locator('h4');
-    return await title.textContent();
-  }
-
-   async getEpisodeDescription(episodeNumber) {
-    const episode = this.episodes.nth(episodeNumber - 1);
-    const description = episode.locator('.episode-description');
-    return await description.textContent();
-  }
 
 }
 

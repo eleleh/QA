@@ -72,7 +72,7 @@
 |-------|-------|-----|------|---------|
 | TC-W32 | Podcast-Sektion vollständig sichtbar (Titel, Player, Playtime) | automated | Niedrig | --- |
 | TC-W33 | Podcast-Audio-Player: Play-Button startet Audio, wechselt zu Pause, Balken und Time aktualisieren | automated | Mittel | --- |
-| TC-W34 | Podcast-Audio-Player: Pause-Button stoppt Wiedergabe, Zeit bleibt erhalten | manual | Mittel | --- |
+| TC-W34 | Podcast-Audio-Player: Pause-Button stoppt Wiedergabe, Zeit bleibt erhalten | automated | Mittel | --- |
 | TC-W35 | Podcast-Audio-Player: Fehlende Audio-Datei zeigt kontrollierten Fehlerzustand | manual | Niedrig | --- |
 | TC-W36 | Podcast-Audio-Player: Mehrere Player starten (nur einer läuft oder parallele Wiedergabe) | manual | Niedrig | --- |
 
