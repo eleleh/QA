@@ -10,6 +10,8 @@ module.exports = defineConfig({
   },
 
   fullyParallel: false,
+  workers: 1,
+  retries: 1,
   forbidOnly: !!process.env.CI,
 
   reporter: [

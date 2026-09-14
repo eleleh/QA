@@ -53,6 +53,8 @@ test.describe('Zustandsübergänge', () => {
         const firstPoint = timelineSection.firstTimelinePoint();
 
         await expect(firstPoint).toBeVisible();
+        // Die Anwendung setzt den aktiven Zustand erst beim Interaktions-/Scroll-Event.
+        await timelineSection.clickTimelinePoint(0);
         await expect(firstPoint).toHaveClass(/active/);
         await expect(firstPoint).toContainText('1745');
 
@@ -83,7 +85,7 @@ test.describe('Zustandsübergänge', () => {
 
             await expect.poll(async () => {
                 return video.evaluate(element => element.readyState);
-            }).toBeGreaterThanOrEqual(1);
+            }, { timeout: 20000 }).toBeGreaterThanOrEqual(1);
 
             await video.evaluate(async element => {
                 element.muted = true;

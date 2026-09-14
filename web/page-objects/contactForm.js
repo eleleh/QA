@@ -12,6 +12,10 @@ class ContactForm {
     this.closeButton = page.locator('#contactSuccessConfirmation .close-btn');
     this.okButton = page.locator('#closeModalBtn');
   }
+  
+  async scrollToForm() {
+    await this.form.scrollIntoViewIfNeeded();
+  }
 
   async fill({ name = 'Max Mustermann', email = 'max@example.com', message = 'Guten Tag! Dies ist eine gültige Testnachricht.' } = {}) {
     await this.nameInput.fill(name);
@@ -20,7 +24,6 @@ class ContactForm {
   }
 
   async submit() {
-    await this.submitButton.scrollIntoViewIfNeeded();
     await this.submitButton.click();
   }
 

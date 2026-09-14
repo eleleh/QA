@@ -88,19 +88,14 @@
 | TC-W40 | Horizontaler Social-Media-Scroll: Touch (Wischgeste) auf Smartphone | manual | Mittel | --- |
 | TC-W41 | Horizontaler Social-Media-Scroll: Tastatur (Tab, Pfeiltasten) | manual | Mittel | --- |
 | TC-W42 | Horizontaler Scroll: Erster und letzter Eintrag erreichbar, kein Layoutbruch | manual | Mittel | --- |
-| TC-W43 | Externer Social-Media-Link öffnet korrekte URL (neuer Tab, noopener) | automated | Niedrig | --- |
-| TC-W44 | Eingebettetes Bild/Video lädt vollständig | automated | Niedrig | --- |
-| TC-W45 | Fehlendes externes Medium zeigt kontrollierten Fehlerzustand | manual | Niedrig | --- |
-
 
 ---
-
 
 ## Medien (TC-W46)
 
 | TC-ID | Titel | Typ | Prio | Kern-TC |
 |-------|-------|-----|------|---------|
-| TC-W46 | Alle Mdien laden vollständig (kein Broken-Image-Symbol) | automated | Niedrig | --- |
+| TC-W46 | Alle Medien laden vollständig | automated | Niedrig | --- |
 
 ---
 

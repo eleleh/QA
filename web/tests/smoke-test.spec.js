@@ -179,7 +179,8 @@ test.describe('Smoke Suite – Web Medienprojekt', () => {
   });
 
   test('TC-W44: Alle Medien werden angezeigt', async ({ page }) => {
-    await page.goto('/');
+    // Die gemeinsame Navigation wartet bereits auf DOMContentLoaded.
+    await homePage.goto();
 
     const media = page.locator(
       'img:visible, video:visible, audio:visible'

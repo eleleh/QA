@@ -17,7 +17,10 @@ class HomePage {
   }
 
   async goto() {
-    await this.page.goto('/');
+    await this.page.goto('/', {
+      waitUntil: 'domcontentloaded',
+      timeout: 60000
+    });
   }
 
   async clickTimeline() {
@@ -78,8 +81,8 @@ class HomePage {
   }
 
   async navigateToTimelineFromMobile() {
-  await this.mobileTimelineLink.click();
-}
+    await this.mobileTimelineLink.click();
+  }
 }
 
 module.exports = { HomePage };

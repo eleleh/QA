@@ -68,8 +68,6 @@ test.describe('Navigation', () => {
                 homePage.clickFooterQuickLink('Impressum')
             ]);
 
-            await impressumPage.waitForLoadState();
-
             await expect(impressumPage).toHaveURL(
                 'https://riquethaus.de/kontakt/'
             );
@@ -78,8 +76,6 @@ test.describe('Navigation', () => {
                 page.waitForEvent('popup'),
                 homePage.clickFooterQuickLink('Datenschutz')
             ]);
-
-            await datenschutzPage.waitForLoadState();
 
             await expect(datenschutzPage).toHaveURL(
                 'https://riquethaus.de/datenschutz/'
@@ -118,8 +114,6 @@ test.describe('Navigation', () => {
                 instagram.click()
             ]);
 
-            await instagramPage.waitForLoadState();
-
             await expect(instagramPage).toHaveURL(
                 'https://www.instagram.com/riquethaus/'
             );
@@ -131,10 +125,8 @@ test.describe('Navigation', () => {
                 facebook.click()
             ]);
 
-            await facebookPage.waitForLoadState();
-
             await expect(facebookPage).toHaveURL(
-                'https://www.facebook.com/pages/Riquet-Kaffeehaus/164233723594776'
+                /facebook\.com\/pages\/Riquet(?:-Kaffeehaus|-Kaffehaus)\/164233723594776/i
             );
 
             await facebookPage.close();

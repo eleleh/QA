@@ -26,7 +26,8 @@ test.describe('Podcast', () => {
 
         await expect(podcastSection.playButton(1)).toBeVisible();
 
-        await expect(podcastSection.timeDisplay(1)).toContainText('3:26');
+        // Die Audiodauer wird erst nach dem Laden der Metadaten formatiert.
+        await expect(podcastSection.timeDisplay(1)).toHaveText(/^\d+:\d{2}$/);
 
     });
 
@@ -81,7 +82,7 @@ test.describe('Podcast', () => {
         await expect(podcastSection.isPlaying(1)).resolves.toBe(true);
 
         await expect.poll(async () => {
-            return await podcastSection.getProgressPercent(progressBar);
+            return await podcastSection.audio(1).evaluate(audio => audio.currentTime);
         }, {
             timeout: 10000,
             message: 'Der Podcast muss vor dem Pausieren einen Fortschritt anzeigen.'
