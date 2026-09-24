@@ -15,8 +15,8 @@ module.exports = defineConfig({
   forbidOnly: !!process.env.CI,
 
   reporter: [
-    ['html', { outputFolder: 'reports', open: 'never' }],
-    ['list']
+    ['html', { open: 'never' }],
+    ['junit', { outputFile: 'test-results/junit.xml' }]
   ],
 
   use: {
