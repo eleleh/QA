@@ -50,7 +50,7 @@ test.describe('Navigation', () => {
     test.describe('Footer', () => {
 
 
-        test('TC-W48: Footer Quick Links navigieren zur korrekten Sektion', async ({ page }) => {
+        test('TC-W45: Footer Quick Links navigieren zur korrekten Sektion', async ({ page }) => {
             await homePage.clickFooterQuickLink('Timeline');
             await expect(page.locator('#timeline')).toBeInViewport();
 
@@ -84,7 +84,7 @@ test.describe('Navigation', () => {
             await datenschutzPage.close();
         });
 
-        test('TC-W47: Footer-Button „Tisch Reservieren“ öffnet das Reservierungsmodal', async ({ page }) => {
+        test('TC-W44: Footer-Button „Tisch Reservieren“ öffnet das Reservierungsmodal', async ({ page }) => {
 
             const footerReserveButton = page.locator('#about-location-btn');
 
@@ -99,7 +99,7 @@ test.describe('Navigation', () => {
             await expect(reservationModal.modal).toBeHidden();
         });
 
-        test('TC-W53: Footer Social-Media-Icons verlinkt und sichtbar', async ({ page }) => {
+        test('TC-W51: Footer Social-Media-Icons verlinkt und sichtbar', async ({ page }) => {
             const instagram = page.locator('#footer-instagram-link');
             const facebook = page.locator('#footer-facebook-link');
             const footer = page.locator('.footer-social');

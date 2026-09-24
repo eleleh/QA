@@ -1,0 +1,10 @@
+# Node dependencies
+web/node_modules/
+
+# Playwright output
+web/test-results/
+web/reports/
+web/playwright-report/
+
+# Local logs
+*.log

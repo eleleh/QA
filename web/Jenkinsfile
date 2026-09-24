@@ -1,0 +1,52 @@
+pipeline {
+    agent any
+
+    options {
+        timestamps()
+        skipDefaultCheckout(true)
+        disableConcurrentBuilds()
+    }
+
+    environment {
+        PLAYWRIGHT_JUNIT_OUTPUT_FILE = 'test-results/junit.xml'
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('Install dependencies') {
+            steps {
+                dir('web') {
+                    bat 'npm ci'
+                }
+            }
+        }
+
+        stage('Install Playwright browser') {
+            steps {
+                dir('web') {
+                    bat 'npx playwright install chromium'
+                }
+            }
+        }
+
+        stage('Run Playwright tests') {
+            steps {
+                dir('web') {
+                    bat 'npm test -- --reporter=line,junit'
+                }
+            }
+        }
+    }
+
+    post {
+        always {
+            junit testResults: 'web/test-results/junit.xml', allowEmptyResults: true
+            archiveArtifacts artifacts: 'web/test-results/**, web/reports/**', allowEmptyArchive: true
+        }
+    }
+}

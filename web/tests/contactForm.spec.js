@@ -5,7 +5,7 @@ const { ContactForm } = require('../page-objects/contactForm');
 
 const contactValidationCases = [
     {
-        id: 'TC-W50',
+        id: 'TC-W47',
         title: 'Name unter 2 Zeichen wird abgelehnt',
         data: {
             name: 'M'
@@ -13,7 +13,7 @@ const contactValidationCases = [
         expectedError: /name.*mindestens.*2.*zeichen/i
     },
     {
-        id: 'TC-W51',
+        id: 'TC-W48',
         title: 'E-Mail-Format ungültig wird abgelehnt',
         data: {
             email: 'max@'
@@ -21,7 +21,7 @@ const contactValidationCases = [
         expectedError: /e-?mail.*gültig|gültige.*e-?mail/i
     },
     {
-        id: 'TC-W52',
+        id: 'TC-W49',
         title: 'Nachricht unter 10 Zeichen wird abgelehnt',
         data: {
             message: 'Hallo'

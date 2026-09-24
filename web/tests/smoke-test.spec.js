@@ -104,7 +104,7 @@ test.describe('Smoke Suite – Web Medienprojekt', () => {
     ).toBeHidden();
   });
 
-  test('TC-W53: Erfolgreiche Kontaktanfrage mit gültigen Daten', async ({ page }) => {
+  test('TC-W50: Erfolgreiche Kontaktanfrage mit gültigen Daten', async ({ page }) => {
     await contactForm.fillAndSubmitValid();
 
     // Warten auf das Success-Modal und schließen
@@ -113,7 +113,7 @@ test.describe('Smoke Suite – Web Medienprojekt', () => {
     await expect(contactForm.successModal).toBeHidden();
   });
 
-  test('TC-W21: Leeres Kontaktformular wird nicht abgesendet', async ({ page }) => {
+  test('TC-W46: Leeres Kontaktformular wird nicht abgesendet', async ({ page }) => {
     await contactForm.submit();
 
     await expect(contactForm.form).toBeVisible();
@@ -178,7 +178,7 @@ test.describe('Smoke Suite – Web Medienprojekt', () => {
 
   });
 
-  test('TC-W44: Alle Medien werden angezeigt', async ({ page }) => {
+  test('TC-W43: Alle Medien werden angezeigt', async ({ page }) => {
     // Die gemeinsame Navigation wartet bereits auf DOMContentLoaded.
     await homePage.goto();
 
